@@ -1,2 +1,17 @@
-# Enhancing-Logical-Reasoning-Ability-Using-Code-Generation-Tools
-An agent that improves logical reasoning by translating natural-language logic puzzles into constraint models and solving them with a code-based CSP solver (python-constraint), separating language understanding from deterministic reasoning.
+# LLM-CSP Logic Agent
+An agent that translates natural-language logic puzzles(k-k Problem) into constraint models and solves them using a deterministic CSP solver.
+LLM is used for semantic parsing, while logical reasoning is delegated to a constraint solver (python-constraint).
+
+---
+
+## Requirements
+
+- Python 3.10+
+- python-constraint
+- requests
+- datasets
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
