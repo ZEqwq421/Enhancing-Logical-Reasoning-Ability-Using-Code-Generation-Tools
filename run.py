@@ -34,7 +34,6 @@ def run_split(ds, split_name, max_samples=50):
         quiz = ex["quiz"]
         gt = ex["solution"]  # list[bool]
 
-        # -------- oracle (upper bound) --------
         try:
             oracle_statements = parse_oracle_statements(ex["statements"])
             pred_oracle, st_oracle = solve_one(oracle_statements)
